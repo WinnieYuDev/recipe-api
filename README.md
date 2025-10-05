@@ -1,22 +1,24 @@
-# 📊 Project: Simple API 2
+# Simple Recipe Website ![alt text](image-1.png)
 
-### Goal: Display data returned from an api
+![alt text](image.png)
 
-### How to submit your code for review:
+# Description
+This website enables user to enter one ingredient from their fridge and find simple recipes
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How It's Made:
+Tech used: 
+- HTML
+- CSS
+- JavaScript
+- API
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## Lessons Learned:
+- How to integrate API database into JS
+- How to use innerText and HTML
+- How to use split (), trim (), map (), slice() to clean up text from API call
+
+## Notes
+- Would like to commit better styling to website
+
+#### API Used
+https://www.themealdb.com/api.php 

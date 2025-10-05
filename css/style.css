@@ -1,0 +1,180 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(240, 145, 3);
+  color:rgb(53, 34, 34);
+  font-size: 40px;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  width:100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h2 {
+  font-size: 100px;
+  margin: 0;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 25px;
+  color:rgb(50, 54, 6);
+}
+
+section h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(214, 133, 79, 0.829);
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.search-bar span {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.search-bar input {
+  padding: 8px;
+  width: 250px;
+  max-width: 100%;
+  background-color: rgb(241, 160, 88);
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  text-align: center;
+  height:45px;  
+}
+
+.search-bar button {
+  font-size:30px;
+  padding: 8px 14px;
+  background-color: rgb(233, 180, 133);
+  color: rgb(31, 0, 0);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: rgb(36, 19, 4);
+}
+
+#recipes-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.hidden{
+  display:none;
+}
+
+.recipes {
+  background-color: rgb(233, 184, 94);
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 3px solid black;  
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  color:rgb(71, 44, 1);
+}
+
+.recipe-row {
+  display: flex;
+  gap: 30px; 
+  align-items: flex-start;
+  flex-wrap: nowrap; 
+}
+
+.recipe-row img {
+  width: 25%;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+
+.text-section {
+  display: flex;
+  gap: 30px; 
+  flex: 1 1 auto;
+  min-width: 0; 
+}
+
+.ingredients {
+  flex-direction: column wrap;
+  width:20%; 
+}
+
+.instructions {
+  flex-direction: column wrap;
+  width:60%;
+}
+
+.ingredients li, .instructions li {
+  line-height: 1.5;
+  font-size: 25px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media (max-width: 700px) {
+  .recipe-row {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .text-section {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .ingredients, .instructions {
+    flex: 1 1 100%;
+    padding-left: 0;
+  }
+}

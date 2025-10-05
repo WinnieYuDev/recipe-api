@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="urf-8">
+		<meta name="Simple Recipe" content="Use of Recipe API to search recipes using ingredient names">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Recipe API</title>
+		<!-- external CSS link -->
+		 <link rel="stylesheet" href="css/normalize.css">
+		 <link rel="stylesheet" href="css/style.css">
+</head>	
+<body>
+<main class="container">
+  <header>
+    <h2>Welcome!</h2>
+    <p>Find easy dinner ideas, healthy recipes, plus helpful cooking tips and techniques.</p>
+  </header>
+  <section>
+    <h1>Recipes</h1>
+    <div class="search-bar">
+      <span>What's in your fridge?</span>
+      <input type="text" id="user-search" placeholder="Enter ingredient e.g beef" />
+      <button id="search-button">Search Recipes</button>
+    </div>
+    <div id="recipes-container">
+	<section class="hidden" class="recipes">
+	<h3 class="title"></h3>
+	<div class="recipe-row">
+		<img src="" alt="" />
+		<div class="text-section">
+		<ul class="ingredients"></ul>
+		<ol class="instructions"></ol>
+		</div>
+	</div>
+	</section>
+    </div>
+  </section>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>
